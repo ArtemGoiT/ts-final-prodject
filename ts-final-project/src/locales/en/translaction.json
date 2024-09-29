@@ -1,0 +1,339 @@
+{
+    "specialSign": "V is the volume of the water norm in liters per day, M is your body weight, T is the time of active sports, or another type of activity commensurate in terms of loads (in the absence of these, you must set 0)",
+    "happy": "{{count}} happy",
+    "happy_few": "{{count}} happy",
+    "happy_plural": "{{count}} happy",
+    "happy_many": "{{count}} happy",
+    "customers": "customers",
+    "customers_singular": "customer",
+    "customers_few": "customers",
+    "customers_plural": "customers",
+    "customers_many": "customers",
+    "our": "Our",
+    "our_singular": "Our",
+    "our_few": "Our",
+    "our_plural": "Our",
+    "our_many": "Our",
+    "Record daily water intake and track": "Record daily water intake and track",
+    "Water consumption tracker": "Water consumption tracker",
+    "Try tracker": "Try tracker",
+    "Sign In": "Sign In",
+    "Habit drive": "Habit drive",
+    "View statistics": "View statistics",
+    "Personal rate setting": "Personal rate setting",
+    "Error: user not found!": "Error: user not found!",
+    "Change password": "Change password",
+    "Email": "Email",
+    "Send": "Send",
+    "Back to the main page": "Back to the main page",
+    "Home page": "Home page",
+    "Back to home": "Back to home",
+    "Error: user not found or invalid token!": "Error: user not found or invalid token!",
+    "Repeat password": "Repeat password",
+    "Already have an account?": "Already have an account?",
+    "Too short!": "Too short!",
+    "Required": "Required",
+    "Passwords must match": "Passwords must match",
+    "Please confirm your password": "Please confirm your password",
+    "Password": "Password",
+    "Enter new password": "Enter new password",
+    "Repeat your password": "Repeat your password",
+    "Must be a valid email": "Must be a valid email",
+    "Log in is successful!": "Log in is successful!",
+    "Error: wrong password or email! Please try again": "Error: wrong password or email! Please try again",
+    "Enter your email": "Enter your email",
+    "Enter your password": "Enter your password",
+    "Don’t have an account?": "Don’t have an account?",
+    "Forgot your password?": "Forgot your password?",
+    "Recover password": "Recover password",
+    "Something went wrong": "Something went wrong",
+    "My daily norma": "My daily norma",
+    "Today": "Today",
+    "Add water": "Add water",
+    "Hello,": "Hello,",
+    "Guest": "Guest",
+    "Settings": "Settings",
+    "Log out": "Log out",
+    "Edit the entered amount of water": "Edit the entered amount of water",
+    "Choose a value:": "Choose a value:",
+    "Correct entered data:": "Correct entered data:",
+    "Recording time is required": "Recording time is required",
+    "Amount must be at least 50 ml": "Amount must be at least 50 ml",
+    "Amount cannot exceed 10 liters (10000 ml)": "Amount cannot exceed 10 liters (10000 ml)",
+    "Enter a value from 50 ml to 10000 ml": "Enter a value from 50 ml to 10000 ml",
+    "Water portion updated successfully!": "Water portion updated successfully!",
+    "Water portion added successfully!": "Water portion added successfully!",
+    "An error occurred": "An error occurred",
+    "Amount of water:": "Amount of water:",
+    "Save": "Save",
+    "Setting": "Setting",
+    "Please select gender": "Please select gender",
+    "Name is required": "Name is required",
+    "Invalid email format": "Invalid email format",
+    "Email is required": "Email is required",
+    "Weight must be positive": "Weight must be positive",
+    "Weight is required": "Weight is required",
+    "Time cannot be negative": "Time cannot be negative",
+    "Please specify time": "Please specify time",
+    "Water intake must be positive": "Water intake must be positive",
+    "Please specify water intake": "Please specify water intake",
+    "Upload a photo": "Upload a photo",
+    "Woman": "Woman",
+    "Man": "Man",
+    "Your name": "Your name",
+    "For woman:": "For woman:",
+    "For man:": "For man:",
+    "Active time in hours": "Active time in hours",
+    "Your weight in kilograms:": "Your weight in kilograms:",
+    "The time of active participation in sports:": "The time of active participation in sports:",
+    "The required amount of water in liters per day:": "The required amount of water in liters per day:",
+    "Write down how much water you will drink:": "Write down how much water you will drink:",
+    "Delete entry": "Delete entry",
+    "Are you sure you want to delete the entry?": "Are you sure you want to delete the entry?",
+    "Delete": "Delete",
+    "Cancel": "Cancel",
+    "Do you really want to leave?": "Do you really want to leave?",
+  
+    "unsupported_file_format": "Unsupported file format",
+    "select_gender": "Please select gender",
+    "name_max_length": "Name cannot exceed 20 characters",
+    "name_letters_only": "Name can only contain letters",
+    "name_required": "Name is required",
+    "invalid_email_format": "Invalid email format",
+    "email_required": "Email is required",
+    "weight_type_error": "Weight must be a number",
+    "weight_positive": "Weight must be positive",
+    "weight_required": "Weight is required",
+    "weight_min": "Weight must be at least 1 kg",
+    "weight_max": "Weight cannot exceed 500 kg",
+    "sport_time_number": "Sport time must be a number",
+    "sport_time_negative": "Time cannot be negative",
+    "sport_time_required": "Please specify time",
+    "sport_time_max": "Time cannot exceed 24 hours",
+    "water_intake_number": "Water intake must be a number",
+    "water_intake_positive": "Water intake must be positive",
+    "water_intake_required": "Please specify how much water you will drink",
+  
+    "avatar_preview": "Avatar Preview",
+    "upload_photo": "Upload Photo",
+    "gender_identity": "Your Gender Identity",
+    "woman": "Woman",
+    "man": "Man",
+    "your_name": "Your Name",
+    "email": "Email",
+    "my_daily_norm": "My Daily Norm",
+    "for_woman": "For Women",
+    "for_man": "For Men",
+    "volume_description": "V is the volume of the water norm in liters per day, M is your weight, T is the time of active training or another type of activity comparable in loads (if these data are not available, set it to 0)",
+    "active_time": "Active Time in Hours",
+    "your_weight": "Your Weight in Kilograms:",
+    "active_participation": "Time of Active Participation in Sports:",
+    "required_water_amount": "Required Amount of Water in Liters per Day:",
+    "water_intake": "Write down how much water you will drink:",
+    "save": "Save",
+    "liters": "L",
+  
+    "validation": {
+      "fileType": "Invalid file type. Please upload an image.",
+      "gender": "Gender is required.",
+      "name": {
+        "max": "Name cannot exceed 20 characters.",
+        "letters": "Name can only contain letters.",
+        "required": "Name is required."
+      },
+      "email": {
+        "invalid": "Invalid email address.",
+        "required": "Email is required."
+      },
+      "sportTime": {
+        "negative": "Active participation cannot be negative.",
+        "required": "Active participation is required.",
+        "max": "Active participation cannot exceed 24 hours."
+      },
+      "waterIntake": {
+        "positive": "Water intake must be a positive number.",
+        "required": "Water intake is required."
+      },
+      "weight": {
+        "required": "Weight is required.",
+        "positive": "Weight must be a positive number.",
+        "min": "Weight must be at least {{min}} kg.",
+        "max": "Weight cannot exceed {{max}} kg."
+      }
+    },
+  
+    "settings": {
+      "title": "Settings"
+    },
+  
+    "today": "Today",
+    "title": "Month",
+    "months": {
+      "January": "January",
+      "February": "February",
+      "March": "March",
+      "April": "April",
+      "May": "May",
+      "June": "June",
+      "July": "July",
+      "August": "August",
+      "September": "September",
+      "October": "October",
+      "November": "November",
+      "December": "December"
+    },
+    "month": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    },
+    "modal": {
+      "delete_entry": "Delete entry",
+      "delete_confirmation": "Are you sure you want to delete the entry?",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "success": "Entry successfully deleted!",
+      "error": "Something went wrong. Please, try again"
+    },
+    "email_form": {
+      "title": "Change password",
+      "email": "Email",
+      "enter_email": "Enter your email",
+      "send": "Send",
+      "back_to_main": "Back to the main page",
+      "home_page": "Home page",
+      "error_user_not_found": "Error: user not found!",
+      "follow_link": "Follow the link, that was sent on your email",
+      "email_required": "Email is required.",
+      "email_invalid": "Must be a valid email."
+    },
+    "loader": {
+      "loading": "Is loading..."
+    },
+    "logout": {
+      "title": "Log out",
+      "message": "Do you really want to leave?",
+      "buttonLogout": "Log out",
+      "buttonCancel": "Cancel"
+    },
+  
+    "resetPassword": {
+      "title": "Change password",
+      "password": "Password",
+      "placeholderPassword": "Enter new password",
+      "repeatPassword": "Repeat password",
+      "placeholderRepeatPassword": "Repeat your password",
+      "buttonSend": "Send",
+      "accountPrompt": "Already have an account?",
+      "signIn": "Sign In",
+      "errorPasswordShort": "Too short!",
+      "errorPasswordRequired": "Required",
+      "errorPasswordMatch": "Passwords must match",
+      "errorConfirmRequired": "Please confirm your password"
+    },
+  
+    "validation": {
+      "email_required": "Email is required.",
+      "email_invalid": "Must be a valid email.",
+      "password_required": "Password is required.",
+      "password_min": "Too short! It must be at least 10 characters long."
+    },
+  
+    "signIn": {
+      "title": "Sign In",
+      "email": "Email",
+      "placeholderEmail": "Enter your email",
+      "password": "Password",
+      "placeholderPassword": "Enter your password",
+      "buttonSignIn": "Sign In",
+      "accountPrompt": "Don’t have an account?",
+      "signUp": "Sign Up",
+      "recoverPrompt": "Forgot your password?",
+      "recoverPassword": "Recover password",
+      "googleAuth": "Sign in with Google",
+      "errorMessage": "Wrong email or password, please try again"
+    },
+  
+    "signUp": {
+      "title": "Sign Up",
+      "email": "Enter your email",
+      "password": "Enter your password",
+      "repeatPassword": "Repeat password",
+  
+      "alreadyHaveAccount": "Already have an account?",
+      "signIn": "Sign In",
+      "googleAuth": "Sign up with Google",
+      "loading": "Loading..."
+    },
+  
+    "userBar": {
+      "guest": "Guest"
+    },
+    "userBarPopover": {
+      "settings": "Settings",
+      "logOut": "Log out"
+    },
+    "userPanel": {
+      "greeting": "Hello, {{name}}!",
+      "guest": "Guest"
+    },
+    "waterChart": {
+      "noData": "No water data available for the selected month.",
+      "tooltip": "{{amount}} ml"
+    },
+    "waterDailyNorma": {
+      "text": "My daily norma",
+      "unit": "L"
+    },
+  
+    "waterForm": {
+      "amountOfWater": "Amount of water:",
+      "recordingTime": "Recording time:",
+      "enterWaterValue": "Enter the value of the water used:",
+      "saveButton": "Save",
+      "successAdd": "Water portion added successfully!",
+      "successUpdate": "Water portion updated successfully!",
+      "error": "Failed to update water data",
+      "amountValue": "{{value}} ml",
+      "validation": {
+        "time": {
+          "format": "The time should be in the format HH:MM",
+          "required": "The time of recording is required"
+        },
+        "amount": {
+          "min": "The amount should be at least 50 ml",
+          "max": "The amount cannot exceed 10 liters (10,000 ml)",
+          "required": "Enter a value from 50 ml to 10000 ml"
+        }
+      }
+    },
+    "waterItem": {
+      "amount": "{{amount}} ml",
+      "time": "{{time}} "
+    },
+    "waterList": {
+      "noEntries": "No entries for this day"
+    },
+    "waterModal": {
+      "addWater": "Add water",
+      "editWater": "Edit the entered amount of water",
+      "chooseValue": "Choose a value:",
+      "correctData": "Correct entered data:"
+    },
+    "addWaterBtn": {
+      "addWater": "Add water"
+    },
+  
+    "data_update_success": "Your data has been successfully updated",
+    "data_update_failure": "Failed to update user data"
+  
+  }

@@ -3,7 +3,7 @@ import css from "../AddWaterBtn/AddWaterBtn.module.css";
 import sprite from "../../imges/sprait/sprite.svg";
 import {useTranslation} from "react-i18next"
 interface AddWaterBtnProps {
-    onClick: () => void;
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
     inDetails?: boolean;
 }
 
