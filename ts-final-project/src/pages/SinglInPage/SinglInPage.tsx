@@ -1,4 +1,4 @@
-const WaterFrom = () => {
+const SinglInPage = () => {
   return (
     <div>
       /* Your JSX here */
@@ -6,4 +6,4 @@ const WaterFrom = () => {
   );
 };
 
-export default WaterFrom;
+export default SinglInPage;
