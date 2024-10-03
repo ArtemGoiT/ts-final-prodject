@@ -1,0 +1,36 @@
+.advantages_section {
+    display: flex;
+    align-items: end;
+    flex-shrink: 0;
+
+
+    max-width: 343px;
+    width: 100%;
+    height: 353px;
+    padding: 32px 16px;
+
+    border-radius: 30px;
+    background-image: url(../../imges/mobile-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.advantages_info__block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.customers_block {
+    display: flex;
+    display: inline-flex;
+    align-items: center;
+
+    width: 100%;
+    padding: 10px 14px;
+    column-gap: 5px;
+
+    border-radius: 30px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+}
