@@ -5,11 +5,10 @@ import css from "./HomePage.module.css"
 
 
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   return (
     <section className={css.main_page}>
-      <h1>fsывавыаопвапваплдdfsd</h1>
-      <p>dfsdfsdfsdf</p>
+   
         <WelcomeSection/>
       <AdvantagesSections/>
     </section>

@@ -1,9 +1,37 @@
+import { useTranslation } from "react-i18next"
+import css from "./WelcomeSection.module.css"
+import Logo from "../Logo/Logo"
+import ChangeLanguageBtn from "../ChangeLanguageBtn/ChangeLanguageBtn"
+import { Link } from "react-router-dom"
 
 
-const WelcomeSection = () => {
+const WelcomeSection: React.FC = () => {
+ const {t} = useTranslation()
   return (
-    <div>
-      
+    <div className={css.welcome_section__wrap}>
+      <div className={css.logo_language__block}>
+        <Logo/>
+        <ChangeLanguageBtn/>
+      </div>
+      <div className={css.welcome_section}>
+        <div className={css.hero_section}>
+        <p className={css.sub_head}> {t("Record daily water intake and track")}</p>
+        <h1 className={css.main_head}> {t("Water consumption tracker")}</h1>
+      </div>
+      <div className={css.buttons_block}>
+        <Link
+        to={"/signup"}
+        className={`${css.button} ${css.button_to_signup}`}>
+          {t("Try tracker")}
+          </Link>
+          <Link
+          to = {"/signin"}
+          className={ `${css.button} ${css.button_to_signin}`}
+          >
+          {t("Sing In")}
+          </Link>
+      </div>
+      </div>
     </div>
   )
 }
