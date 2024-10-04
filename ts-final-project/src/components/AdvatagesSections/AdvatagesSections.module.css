@@ -34,3 +34,298 @@
     background-color: var(--white);
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
 }
+.customers_block_en {
+    max-width: 180px;
+}
+
+.customers_block_ua {
+    max-width: 205px;
+}
+
+.customers_icons__list {
+    display: flex;
+    align-items: center;
+
+}
+.customers_icons__item {
+    position: relative;
+    flex-shrink: 0;
+    width: 26.4px;
+    height: 28px;
+    margin-left: -10px;
+
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    background-color: #d3d3d3;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.customers_icons__item:first-child {
+    z-index: 10;
+    margin-left: 0;
+    background-image: url(../../imges/girl-2-mobile.jpg);
+}
+
+.customers_icons__item:nth-child(2) {
+    z-index: 2;
+    background-image: url(../../imges/boy-mobile.jpg);
+}
+.customers_icons__item:nth-child(3) {
+    z-index: 1;
+    background-image: url(../../imges/girl-1-mobile.jpg);
+}
+.customers_img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.customers_info,
+.customers_info__span {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+.customers_info {
+    display: flex;
+    flex-wrap: wrap;
+
+    color: var(--light-black);
+}
+
+.customers_info__span {
+    color: var(--lime);
+}
+
+.benefits_info__wrap {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 343px;
+    width: 100%;
+    padding-top: 8px;
+}
+
+
+.benefits_info__block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 4px;
+}
+
+.benefits_info__block_eng {
+    max-width: 168px;
+}
+
+.benefits_info__block_ua {
+    max-width: 210px;
+}
+
+.benefits_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 12px;
+
+    font-size: 8px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: -0.08px;
+
+    border-radius: 30px;
+}
+
+.benefits_habits {
+    gap: 4px;
+    background-color: var(--light-black);
+    color: var(--white);
+}
+
+.habits_roll {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+    background-color: var(--lime);
+}
+
+.benefits_statistics {
+    gap: 10px;
+
+    background-color: var(--lime);
+    color: var(--light-black);
+}
+
+.benefits_personal__rate {
+    border-radius: 30px;
+    background-color: var(--white);
+    color: #323F47;
+}
+
+
+/* !планшет */
+
+@media screen and (min-width: 768px) {
+    .advantages_section{
+        max-width: 704px;
+        height: 446px;
+        padding: 32px;
+
+        background-image: url(../../imges/tablet-bg.jpg);
+    }
+
+    .customers_block {
+        padding: 10px 20px;
+        margin-bottom: -30px;
+    }
+
+    .customers_block_en {
+        max-width: 250px;
+    }
+    
+    .customers_block_ua {
+        max-width: 285px;
+    }
+    
+
+    .customers_icons__item {
+        width: 47px;
+        height: 47px;
+        margin-left: -20px;
+    }
+
+    .customers_icons__item:first-child {
+        background-image: url(../../imges/girl-2-tablet.jpg);
+    }
+
+    .customers_icons__item:nth-child(2) {
+        background-image: url(../../imges/boy-tablet.jpg);
+    }
+
+    .customers_icons__item:nth-child(3) {
+        background-image: url(../../imges/girl-1-tablet.jpg);
+    }
+
+    .customers_info,
+    .customers_info__span {
+        font-size: 15px;
+        line-height: 1.49;
+    }
+
+    .benefits_info__wrap {
+        max-width: 704px;
+    }
+
+    .benefits_info__block {
+        gap: 10px;
+    }
+
+    .benefits_info__block_eng {
+        max-width: 245px;
+    }
+    
+    .benefits_info__block_ua {
+        max-width: 305px;
+    }
+
+    .benefits_btn {
+        padding: 11px 16px;
+
+        font-size: 12px;
+        line-height: 1;
+        letter-spacing: -0.12px;
+    }
+
+}
+
+/*! ================== Media 1440px  ============================= */
+
+@media screen and (min-width: 1440px) {
+    .advantages_section {
+        max-width: 672px;
+        height: 736px;
+
+        background-image: url(../../imges/desktop-bg.jpg);
+    }
+
+    .customers_block {
+        margin-bottom: -10px;
+    }
+
+    .customers_icons__item:first-child {
+        background-image: url(../../imges/girl-2-desktop.jpg);
+    }
+
+    .customers_icons__item:nth-child(2) {
+        background-image: url(../../imges/boy-desktop.jpg);
+    }
+
+    .customers_icons__item:nth-child(3) {
+        background-image: url(../../imges/girl-1-desktop.jpg);
+    }
+}
+
+
+/* MEDIA FOR Screen resolutions */
+
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .advantages_section {
+        background-image: url(../../imges/mobile-bg@2.jpg)
+    }
+
+    .customers_icons__item:first-child {
+        background-image: url(../../imges/girl-2-mobile@2.jpg);
+    }
+
+    .customers_icons__item:nth-child(2) {
+        background-image: url(../../imges/boy-mobile@2.jpg);
+    }
+
+    .customers_icons__item:nth-child(3) {
+        background-image: url(../../imges/girl-1-mobile@2.jpg);
+    }
+
+
+    @media screen and (min-width: 768px) {
+        .advantages_section {
+            background-image: url(../../imges/tablet-bg@2.jpg)
+        }
+
+        .customers_icons__item:first-child {
+            background-image: url(../../imges/girl-2-tablet@2.jpg);
+        }
+
+        .customers_icons__item:nth-child(2) {
+            background-image: url(../../imges/boy-tablet@2.jpg);
+        }
+
+        .customers_icons__item:nth-child(3) {
+            background-image: url(../../imges/girl-1-tablet@2.jpg);
+        }
+    }
+
+
+    @media screen and (min-width: 1440px) {
+        .advantages_section {
+            background-image: url(../../imges/desktop-bg@2.jpg)
+        }
+
+        .customers_icons__item:first-child {
+            background-image: url(../../imges/girl-2-desktop@2.jpg);
+        }
+
+        .customers_icons__item:nth-child(2) {
+            background-image: url(../../imges/boy-desktop@2.jpg);
+        }
+
+        .customers_icons__item:nth-child(3) {
+            background-image: url(../../imges/girl-1-desktop@2.jpg);
+        }
+    }
+}

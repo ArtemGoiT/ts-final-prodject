@@ -64,7 +64,7 @@ const AdvantagesSections: React.FC = () => {
           <div
             className={`${css.benefits_info__block} ${
               isEngLanguage
-                ? css.benefits_info__block_en
+                ? css.benefits_info__block_eng
                 : css.benefits_info__block_ua
             }`}
           >
