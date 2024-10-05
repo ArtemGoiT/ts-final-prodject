@@ -1,20 +1,16 @@
 import { useId, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useDispatch } from "react-redux";
-import { NavLink } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import css from "./SinglInFrom.module.css"
-import sprite from "../../imges/sprait/sprite.svg"
+import { NavLink, useNavigate } from "react-router-dom"; // Объединяем импорты
+import css from "./SinglInFrom.module.css";
+import sprite from "../../imges/sprait/sprite.svg";
 import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from 'react-hot-toast';
 import Logo from "../Logo/Logo";
-import Loader from "../Loader/Loader";
 import ChangeLanguageBtn from "../ChangeLanguageBtn/ChangeLanguageBtn";
 
-
-
+// Интерфейс для данных формы
 interface SignInFormData {
   email: string;
   password: string;
@@ -25,8 +21,10 @@ const SinglInFrom: React.FC = () => {
   const emailId = useId();
   const passwordId = useId();
   const [visiblePassword, setVisiblePassword] = useState<boolean>(false);
-  const dispatch = useDispatch();
-  const navigate = useNavigate()
+  // const dispatch = useDispatch();
+  const navigate = useNavigate();
+  
+  // Схема валидации
   const validationSchema = Yup.object().shape({
     email: Yup.string()
       .email(t('validation.email_invalid'))
@@ -54,29 +52,30 @@ const SinglInFrom: React.FC = () => {
 
   // Обрабатываем отправку формы
   const onSubmit: SubmitHandler<SignInFormData> = (values) => {
-    setLoading(true);
-    dispatch(
-      loginUser({
-        email: values.email,
-        password: values.password,
-      }),
-    )
-      .unwrap()
-      .then(() => {
-        toast.success(t('signIn.successMessage'), {
-          duration: 2500,
-        });
-        reset();
-        navigate('/tracker');
-      })
-      .catch(() => {
-        toast.error(t('signIn.errorMessage'), {
-          duration: 2500,
-        });
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+    // setLoading(true); // Закомментировано
+
+    // dispatch(
+    //   loginUser({
+    //     email: values.email,
+    //     password: values.password,
+    //   }),
+    // )
+    //   .unwrap()
+    //   .then(() => {
+    //     toast.success(t('signIn.successMessage'), {
+    //       duration: 2500,
+    //     });
+    //     reset();
+    //     navigate('/tracker');
+    //   })
+    //   .catch(() => {
+    //     toast.error(t('signIn.errorMessage'), {
+    //       duration: 2500,
+    //     });
+    //   })
+    //   .finally(() => {
+    //     setLoading(false); // Закомментировано
+    //   });
   };
 
   return (
@@ -87,7 +86,7 @@ const SinglInFrom: React.FC = () => {
         </div>
         <ChangeLanguageBtn />
       </div>
-      {loading && <Loader />}
+      {/* {loading && <Loader />} Закомментировано */}
       <div className={css.wrapperSignIn}>
         <h2 className={css.title}>{t('signIn.title')}</h2>
         <form
@@ -123,9 +122,7 @@ const SinglInFrom: React.FC = () => {
                 {...register('password')}
                 id={passwordId}
                 placeholder={t('signIn.placeholderPassword')}
-                className={`${css.input} ${
-                  errors.password ? css.error : ''
-                }`}
+                className={`${css.input} ${errors.password ? css.error : ''}`}
                 onBlur={() => trigger('password')}
               />
               <svg
@@ -149,7 +146,7 @@ const SinglInFrom: React.FC = () => {
             <button type="submit" className={css.btn}>
               {t('signIn.buttonSignIn')}
             </button>
-            <GoogleAuth buttonText={t('signIn.googleAuth')} />
+            {/* <GoogleAuth buttonText={t('signIn.googleAuth')} /> Закомментировано */}
           </div>
         </form>
         <p className={css.auth}>
@@ -169,5 +166,4 @@ const SinglInFrom: React.FC = () => {
   );
 };
 
-
-export default SinglInFrom
+export default SinglInFrom;

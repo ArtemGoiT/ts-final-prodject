@@ -1,6 +1,6 @@
 
 
-import css from './Loader.module.css';
+import css from "./Louder.module.css";
 import clsx from 'clsx/lite';
 import { useTranslation } from 'react-i18next';
 

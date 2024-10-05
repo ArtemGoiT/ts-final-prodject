@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import RestrictedRoute from './RestrictedRoute';
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
-
+const SinglInPage = lazy(() => import ("./pages/SinglInPage/SinglInPage"))
 
 
 
@@ -15,7 +15,8 @@ const App: React.FC = () => {
   return (
     <div className={css.app}>
  <SharedLayout>
-      <HomePage/>
+     <HomePage/>
+     <SinglInPage/>
   <Suspense fallback={null}>
     <Routes>
       <Route 
@@ -25,6 +26,15 @@ const App: React.FC = () => {
       component={HomePage}
       redirectTo="/tracker"
       />
+      }
+      />
+      <Route
+      path='/signin'
+      element={
+        <RestrictedRoute
+        component={SinglInPage}
+        redirectTo='/tracker'
+        />
       }
       />
     </Routes>
