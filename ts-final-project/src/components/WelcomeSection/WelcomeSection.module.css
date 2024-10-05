@@ -13,9 +13,9 @@ box-sizing: border-box;
 
 }
 
-.logo_language___block {
+.logo_language__block {
     display: flex;
-    flex-direction: column;
+
     justify-content: space-between;
     width: 100%;
 }

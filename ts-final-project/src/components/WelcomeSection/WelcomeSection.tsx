@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next"
 import css from "./WelcomeSection.module.css"
 import Logo from "../Logo/Logo"
-import ChangeLanguageBtn from "../ChangeLanguageBtn/ChangeLanguageBtn"
 import { Link } from "react-router-dom"
+import ChangeLanguageBtn from "../ChangeLanguageBtn/ChangeLanguageBtn"
 
 
 const WelcomeSection: React.FC = () => {

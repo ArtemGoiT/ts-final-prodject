@@ -14,8 +14,8 @@ const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 const App: React.FC = () => {
   return (
     <div className={css.app}>
-      <HomePage/>
  <SharedLayout>
+      <HomePage/>
   <Suspense fallback={null}>
     <Routes>
       <Route 
