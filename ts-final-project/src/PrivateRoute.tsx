@@ -3,19 +3,19 @@ import { Navigate } from 'react-router-dom';
 import { selectIsLoggedIn } from './redux/user/selectors';
 
 
-interface RestrictedRouteProps {
+interface PrivateRouteProps {
   component: React.ComponentType; // Тип для React-компонента
   redirectTo?: string; // Опциональный пропс для перенаправления
 }
 
-const RestrictedRoute: React.FC<RestrictedRouteProps> = ({
+const PrivateRoute: React.FC<PrivateRouteProps> = ({
   component: Component,
-  redirectTo = '/',
+  redirectTo = '/login',
 }) => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
-
-  // Если пользователь залогинен, перенаправляем на указанный маршрут
-  return isLoggedIn ? <Navigate to={redirectTo} /> : <Component />;
+  
+  // Если пользователь не залогинен, перенаправляем на указанный маршрут
+  return isLoggedIn ? <Component /> : <Navigate to={redirectTo} />;
 };
 
-export default RestrictedRoute;
+export default PrivateRoute;

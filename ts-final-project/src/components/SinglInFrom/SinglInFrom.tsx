@@ -1,6 +1,6 @@
 import { useId, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { NavLink, useNavigate } from "react-router-dom"; // Объединяем импорты
+import { NavLink, useNavigate } from "react-router-dom"; 
 import css from "./SinglInFrom.module.css";
 import sprite from "../../imges/sprait/sprite.svg";
 import * as Yup from 'yup';
@@ -9,6 +9,10 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from 'react-hot-toast';
 import Logo from "../Logo/Logo";
 import ChangeLanguageBtn from "../ChangeLanguageBtn/ChangeLanguageBtn";
+import { loginUser } from "../../redux/user/operations";
+import { useDispatch, useSelector } from "react-redux";
+import { selectLoading } from "../../redux/water/selectors"; // Для использования состояния загрузки
+import Loader from "../Loader/Loader";
 
 // Интерфейс для данных формы
 interface SignInFormData {
@@ -21,18 +25,15 @@ const SinglInFrom: React.FC = () => {
   const emailId = useId();
   const passwordId = useId();
   const [visiblePassword, setVisiblePassword] = useState<boolean>(false);
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const navigate = useNavigate();
-  
+  const loading = useSelector(selectLoading); // Получаем состояние загрузки из Redux
+
   // Схема валидации
   const validationSchema = Yup.object().shape({
     email: Yup.string()
       .email(t('validation.email_invalid'))
-      .required(t('validation.email_required'))
-      .matches(
-        /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
-        'Введите действительный адрес электронной почты',
-      ),
+      .required(t('validation.email_required')),
     password: Yup.string()
       .min(10, t('validation.password_min'))
       .required(t('validation.password_required')),
@@ -51,31 +52,23 @@ const SinglInFrom: React.FC = () => {
   });
 
   // Обрабатываем отправку формы
-  const onSubmit: SubmitHandler<SignInFormData> = (values) => {
-    // setLoading(true); // Закомментировано
-
-    // dispatch(
-    //   loginUser({
-    //     email: values.email,
-    //     password: values.password,
-    //   }),
-    // )
-    //   .unwrap()
-    //   .then(() => {
-    //     toast.success(t('signIn.successMessage'), {
-    //       duration: 2500,
-    //     });
-    //     reset();
-    //     navigate('/tracker');
-    //   })
-    //   .catch(() => {
-    //     toast.error(t('signIn.errorMessage'), {
-    //       duration: 2500,
-    //     });
-    //   })
-    //   .finally(() => {
-    //     setLoading(false); // Закомментировано
-    //   });
+  const onSubmit: SubmitHandler<SignInFormData> = async (values) => {
+    try {
+      await dispatch(loginUser({
+        email: values.email,
+        password: values.password,
+      })).unwrap();
+      
+      toast.success(t('signIn.successMessage'), {
+        duration: 2500,
+      });
+      reset();
+      navigate('/tracker');
+    } catch (error) {
+      toast.error(t('signIn.errorMessage'), {
+        duration: 2500,
+      });
+    }
   };
 
   return (
@@ -86,7 +79,7 @@ const SinglInFrom: React.FC = () => {
         </div>
         <ChangeLanguageBtn />
       </div>
-      {/* {loading && <Loader />} Закомментировано */}
+      {loading && <Loader />} {/* Предполагаем, что Loader импортирован */}
       <div className={css.wrapperSignIn}>
         <h2 className={css.title}>{t('signIn.title')}</h2>
         <form
@@ -146,7 +139,6 @@ const SinglInFrom: React.FC = () => {
             <button type="submit" className={css.btn}>
               {t('signIn.buttonSignIn')}
             </button>
-            {/* <GoogleAuth buttonText={t('signIn.googleAuth')} /> Закомментировано */}
           </div>
         </form>
         <p className={css.auth}>
